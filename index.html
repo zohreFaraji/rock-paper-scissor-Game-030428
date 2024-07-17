@@ -8,287 +8,134 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/bootstrap-icons.css">
     <title>Document</title>
-    <style>
-        .hide {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .text-stroke-3 {
-            text-shadow: -1px -1px 0 #18a2ec, 1px -1px 0 #18a2ec, -1px 1px 0 #18a2ec, 1px 1px 0 #18a2ec;
-        }
-    </style>
 </head>
 
-<body class="m-0 b-0 box-border">
-    <main class="block content-between justify-center">
+<body>
+    <main>
         <!-- start bottomFixedImage -->
         <div class="bottomImage">
-            <figure class="imgFixed"><img src="img/img/4.png" alt="">
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a href="https://github.com/zohreFaraji"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/zohre-faraji-41822315a/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.instagram.com/zohrefaraji212/"><i class="bi bi-instagram"></i></a>
+            <figure class="imgFixed"><img class="img1" src="img/img/4.png" alt="">
+                <a class="a1" href="https://github.com/zohreFaraji"><i class="bi bi-github i1"></i></a>
+                <a class="a1" href="https://www.linkedin.com/in/zohre-faraji-41822315a/"><i class="bi bi-linkedin i1"></i></a>
+                <a class="a1" href="https://www.instagram.com/zohrefaraji212/"><i class="bi bi-instagram i1"></i></a>
             </figure>
         </div>
         <!-- end bottomFixedImage -->
-        <div class="w-[94%] md:[90%] lg:w-1/2 h-[270px] rounded-[50%] bg-[rgba(8,_112,_184,_0.5)] m-auto 
-        relative top-[20%] translate-y-[30%]">
-            <div
-                class="absolute w-[70px] h-[70px] rounded-[50%] bg-white top-[35%] translate-y-[-50%] left-[12%] lg:left-[10%] xl:left-[15%] text-white flex justify-center items-center">
-                <h1 class="scoreHuman1 text-[30px] text-black">0</h1>
-            </div>
-            <div
-                class="imgUser absolute w-[120px] h-[120px] rounded-[50%] bg-white translate-y-[-50%] top-[35%] left-[27%] lg:left-[26%] xl:left-[30%] border-[#15112D] border-[3px] overflow-hidden">
-                <img src="img/1222.png" alt="" class="h-[120px] object-cover">
-            </div>
-            <h1 class="user1 demoBot absolute bottom-[20%] left-[22%] lg:left-[23%] text-white text-[28px]">User
-            </h1>
-            <div
-                class="brd absolute hidden md:flex top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%] rotate-[90deg] bg-white w-[100px] h-[3px]">
-            </div>
-            <div
-                class="absolute w-[70px] h-[70px] rounded-[50%] bg-white top-[35%] translate-y-[-50%] right-[12%] lg:right-[10%] xl:right-[15%] text-white flex justify-center items-center">
-                <h1 class="scoreBot1 text-[30px] text-black">0</h1>
-            </div>
-            <div
-                class="imgBot absolute w-[120px] h-[120px] rounded-[50%] bg-white translate-y-[-50%] top-[35%] right-[27%] lg:right-[26%] xl:right-[30%] border-[#15112D] border-[3px] overflow-hidden">
-                <img src="img/122.png" alt="" class="h-[120px] object-cover">
-            </div>
-            <h1 class="demoUser absolute bottom-[20%] right-[22%] lg:right-[24%] text-white text-[28px]">Bot
-            </h1>
+        <div class="flex justify-center items-center mt-[20px]">
+            <img src="img/111.jpg" alt="" class="w-[85%] h-[400px] lg:w-[60%] object-cover">
         </div>
-
-        <div class="center flex mt-[140px] justify-center">
-            <div
-                class="w-[150px] h-[150px] rounded-[50%] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] flex justify-center items-center mr-[80px]">
-                <img src="img/paperHuman.jpg" alt="" class="w-[100px] imageHuman">
+        <form action="" onsubmit="return false;">
+            <div class="flex justify-center items-center mt-[40px] h-[80px]">
+                <div class="w-80">
+                    <div class="relative w-full min-w-[200px] h-10">
+                        <div
+                            class="absolute grid w-5 h-5 place-items-center text-blue-gray-500 top-2/4 right-3 -translate-y-2/4">
+                            <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                        </div>
+                        <input
+                            class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-2 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] !pr-9 border-blue-gray-200 focus:border-gray-900"
+                            placeholder="please type your name" />
+                        <label
+                            class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">
+                            please type your name
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div
-                class="w-[150px] h-[150px] rounded-[50%] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] flex justify-center items-center">
-                <img src="img/rockBot.png" alt="" class="rotate-[-45deg] w-[80px] imageBot">
+            <h1 class="nameErr text-red-500 capitalize hidden justify-center mr-[90px]"><span class="font-bold">Error:
+                </span>please type your name</h1>
+            <div class="flex mt-3 justify-center">
+                <div class="m-3">
+                    <label>
+                        <input type="radio" name="gender" value="male" class="hidden">
+                        <button
+                            class="gender-btn w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                            <span class="male mx-auto">Male</span>
+                        </button>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <label>
+                        <input type="radio" name="gender" value="female" class="hidden">
+                        <button
+                            class="gender-btn w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-red-500 hover:border-red-600 hover:bg-red-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                            <span class="female mx-auto">Female</span>
+                        </button>
+                    </label>
+                </div>
             </div>
-        </div>
-
-        <div class="select flex justify-between ml-[50%] translate-x-[-50%] items-center w-[210px] mt-[70px]">
-            <ul class="btn flex *:w-[70px] *:h-[70px] overflow-hidden">
-                <li><img src="img/scissor.jpg" alt="" data-img="scissor"
-                        class="rounded-[50%] *:w-[60px] h-[60px] mr-[12px] hover:cursor-pointer hover:border-x-yellow-600 hover:border-[4px]">
-                </li>
-                <li><img src="img/paper.jpg" alt="" data-img="paper"
-                        class="rounded-[50%] *:w-[60px] h-[60px] mr-[12px] hover:cursor-pointer hover:border-x-yellow-600 hover:border-[4px]">
-                </li>
-                <li><img src="img/rock.jpg" alt="" data-img="rock"
-                        class="rounded-[50%] *:w-[60px] h-[60px] mr-[12px] hover:cursor-pointer hover:border-x-yellow-600 hover:border-[4px]">
-                </li>
-            </ul>
-        </div>
-        <div
-            class="pop hide fixed top-[45%] left-[50%] translate-x-[-50%] w-[80%] h-[49%] md:w-[75%] lg:w-[680px] lg:h-[370px] bg-white rounded-[10px] shadow-[0_20px_50px_rgba(41,_40,_41,_0.72)] z-10 overflow-hidden">
-            <figure class="w-[80%] md:w-[53%] h-[120%] absolute top-[-35px] right-[-90px]"><img src="img/download.png"
-                    alt="" class="h-full w-full"></figure>
-            <h1
-                class="pt-[20px] pl-[43px] md:pl-[40px] font-bold text-[22px] md:text-[40px] uppercase text-[#FFD24F] text-stroke-3">
-                Rock, Paper, Scissor</h1>
-            <table class="ml-[50px] md:ml-[75px] border-[3px] w-[50%]">
-                <h3 class="border-[3px] px-[12px] text-center w-[50%] ml-[50px] md:ml-[75px] mt-[20px] text-[23px]">
-                    Scoreboard</h3>
-                <tbody class="w-[50%]">
-                    <tr class="*:text-center h-[80px]">
-                        <td class="w-1/2 px-[15px] scrHuman text-[28px] font-bold">0
-                            <h3 class="mt-[16px]">You</h3>
-                        </td>
-                        <td class="w-1/2 px-[15px] scrBot text-[28px] font-bold">0
-                            <h3 class="mt-[16px]">Bot</h3>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <h1 class="mt-[25px] ml-[80px] md:ml-[107px] font-bold text-[30px] md:text-[40px] result"><i
-                    class="bi bi-heart-fill" aria-hidden="true"></i> YOU WIN <i class="bi bi-heart-fill"
-                    aria-hidden="true"></i></h1>
-        </div>
+            <h1 class="genderErr text-red-500 capitalize justify-center mr-[90px] hidden"><span class="font-bold">Error:
+                </span> please select your gender</h1>
+            <div class="mt-6 flex justify-center h-[50px]">
+                <button
+                    class="btn align-middle select-none font-sans font-bold text-[60px] text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-5 px-4 rounded-lg bg-white text-blue-gray-900 shadow-md shadow-blue-gray-500/10 hover:shadow-lg hover:shadow-blue-gray-500/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] border-[3px] active:shadow-none flex items-center gap-3"
+                    type="button">start game
+                    <img src="img/rock-paper-scissors.svg" alt="metamask" class="w-12 h-16 ml-2 py-[6px]" />
+                </button>
+            </div>
+        </form>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const genderErr = document.querySelector('.genderErr')
+            const nameErr = document.querySelector('.nameErr')
+            const genderButtons = document.querySelectorAll('.gender-btn')
+            genderButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const radioButton = button.previousElementSibling;
+                    radioButton.checked = true;
+                    document.querySelectorAll('.gender-btn').forEach(btn => btn.classList.remove('selected'));
+                    button.classList.add('selected');
+                    console.log(radioButton.value.toLowerCase());
 
 
-        const btn = document.querySelectorAll('.select>.btn>li>img')
-        const user1 = document.querySelector('.user1')
-        const imgBot = document.querySelectorAll('.imgBot>img')
-        const imgUser = document.querySelector('.imgUser>img')
-        const imageBot = document.querySelector('.imageBot')
-        const pop = document.querySelector('.pop')
-        const imageHuman = document.querySelector('.imageHuman')
-        const scoreHuman1 = document.querySelector('.scoreHuman1')
-        const scoreBot1 = document.querySelector('.scoreBot1')
-        const scrHuman = document.querySelector('.scrHuman')
-        const scrBot = document.querySelector('.scrBot')
-        const body = document.querySelector('body')
-        const result = document.querySelector('.result')
-        const bot = ['rock', 'paper', 'scissor']
-        let humanSel = ''
-        let botSel = ''
-        let scoreHuman = 0
-        let scoreBot = 0
-        let flag = 0
+                    // Reset all buttons to their default state
+                    genderButtons.forEach(btn => {
+                        btn.classList.remove('selected', 'bg-blue-500', 'text-white', 'bg-red-500', 'text-white');
+                        btn.classList.add('bg-white', 'text-gray-800');
+                    });
 
-
-
-
-
-        let randImgBot = [122, 1222]
-        rand = Math.floor(Math.random() * randImgBot.length)
-        imgBot[0].setAttribute('src', 'img/' + randImgBot[rand] + '.png');
-        // blaskconfetti or successfull animation
-        const blaskconfetti = () => {
-            const count = 200,
-                defaults = {
-                    origin: { y: 0.7 },
-                };
-
-            function fire(particleRatio, opts) {
-                confetti(
-                    Object.assign({}, defaults, opts, {
-                        particleCount: Math.floor(count * particleRatio),
-                    })
-                );
-            }
-
-            fire(0.25, {
-                spread: 26,
-                startVelocity: 55,
+                    if (radioButton.value === 'male') {
+                        button.classList.add('selected', 'bg-blue-500', 'text-white');
+                        button.classList.remove('bg-white', 'text-gray-800');
+                    } else if (radioButton.value === 'female') {
+                        button.classList.add('selected', 'bg-red-500', 'text-white');
+                        button.classList.remove('bg-white', 'text-gray-800');
+                        return;
+                    }
+                });
             });
 
-            fire(0.2, {
-                spread: 60,
+            const btn = document.querySelector('.btn');
+            btn.addEventListener('click', () => {
+                const nameVal = document.querySelector('.peer').value;
+                const selectedGender = document.querySelector('input[name="gender"]:checked');
+
+
+                // Reset classes err
+                nameErr.style.display = 'none';
+                genderErr.style.display = 'none';
+
+                if (!nameVal && !selectedGender) {
+                    nameErr.style.display = 'flex';
+                    genderErr.style.display = 'flex';
+                    return;
+                }
+                if (!nameVal) {
+                    nameErr.style.display = 'flex';
+                    return;
+                }
+                if (!selectedGender) {
+                    genderErr.style.display = 'flex';
+                    return;
+                }
+
+                window.location.href = 'index1.html';
+                localStorage.setItem('name', nameVal);
+                localStorage.setItem('gender', selectedGender.value);
             });
-
-            fire(0.35, {
-                spread: 100,
-                decay: 0.91,
-                scalar: 0.8,
-            });
-
-            fire(0.1, {
-                spread: 120,
-                startVelocity: 25,
-                decay: 0.92,
-                scalar: 1.2,
-            });
-
-            fire(0.1, {
-                spread: 120,
-                startVelocity: 45,
-            });
-        }
-        btn.forEach((val, index) => {
-            val.addEventListener('click', () => {
-                let rps = val.getAttribute('data-img');
-                switch (rps) {
-                    case 'rock':
-                        imageHuman.setAttribute('src', 'img/rockHuman.jpg')
-                        humanSel = 'rock'
-                        break;
-                    case 'paper':
-                        imageHuman.setAttribute('src', 'img/paperHuman.jpg')
-                        humanSel = 'paper'
-                        break;
-                    case 'scissor':
-                        imageHuman.setAttribute('src', 'img/scissorHuman.jpg')
-                        humanSel = 'scissor'
-                        break;
-                }
-
-
-                let botSelect = Math.floor(Math.random() * (bot.length))
-                switch (botSelect) {
-                    case 0:
-                        imageBot.setAttribute('src', 'img/rockBot.png')
-                        botSel = 'rock'
-                        break;
-                    case 1:
-                        imageBot.setAttribute('src', 'img/paperBot.png')
-                        botSel = 'paper'
-                        break;
-                    case 2:
-                        imageBot.setAttribute('src', 'img/scissorBot.png')
-                        botSel = 'scissor'
-                        break;
-                }
-            })
-        })
-        btn.forEach((val, index) => {
-            val.addEventListener('click', () => {
-                flag++
-                if (botSel == 'rock' && humanSel == 'scissor') {
-                    scoreBot++
-                }
-                else if (botSel == 'scissor' && humanSel == 'paper') {
-                    scoreBot++
-                }
-                else if (botSel == 'paper' && humanSel == 'rock') {
-                    scoreBot++
-                }
-                else if (humanSel == 'rock' && botSel == 'scissor') {
-                    scoreHuman++
-                }
-                else if (humanSel == 'scissor' && botSel == 'paper') {
-                    scoreHuman++
-                }
-                else if (humanSel == 'paper' && botSel == 'rock') {
-                    scoreHuman++
-                }
-                // else {
-                // }
-                scoreBot1.innerHTML = scoreBot
-                scoreHuman1.innerHTML = scoreHuman
-
-                if (flag == 10 && scoreBot > scoreHuman) {
-                    pop.classList.remove('hide')
-                    scrHuman.innerHTML = `${scoreHuman} <br> You`
-                    scrBot.innerHTML = `${scoreBot} <br> <h1> BOT </h1>`
-                    result.innerHTML = `<i class="bi bi-heartbreak-fill"
-                aria-hidden="true"></i> YOU LOST <i class="bi bi-heartbreak-fill"
-                    aria-hidden="true"></i>`
-                    body.style.background = '#fa584cf0'
-                } else if (flag == 10 && scoreBot < scoreHuman) {
-                    pop.classList.remove('hide')
-                    scrHuman.innerHTML = `${scoreHuman} <br> You`
-                    scrBot.innerHTML = `${scoreBot} <br> <h1> BOT </h1>`
-                    result.innerHTML = `<i class="bi bi-heart-fill"
-                aria-hidden="true"></i> YOU WON <i class="bi bi-heart-fill"
-                    aria-hidden="true"></i>`
-                    body.style.background = '#4CAF50'
-                    blaskconfetti();
-                } else if (flag == 10 && scoreBot == scoreHuman) {
-                    pop.classList.remove('hide')
-                    scrHuman.innerHTML = `${scoreHuman} <br> You`
-                    scrBot.innerHTML = `${scoreBot} <br> <h1> BOT </h1>`
-                    result.innerHTML = `<i class="bi bi-heart-half"
-                aria-hidden="true"></i> YOU'RE TIE <i class="bi bi-heart-half"
-                    aria-hidden="true"></i>`
-                    body.style.background = 'yellow'
-                }
-            })
-        })
-
-
-
-        // Retrieve variables from localStorage
-        const name = localStorage.getItem('name');
-        const gender = localStorage.getItem('gender');
-        user1.innerHTML = name
-        if (gender == 'male') {
-            imgUser.setAttribute('src', 'img/1222.png');
-        } else {
-            imgUser.setAttribute('src', 'img/122.png');
-        }
+        });
     </script>
 </body>
 
