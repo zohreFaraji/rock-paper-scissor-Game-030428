@@ -1,0 +1,215 @@
+/* start bottomFixedImage */
+.bottomImage {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    width: 200px;
+    height: 110px;
+
+    >.imgFixed {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        bottom: 37px;
+        right: 37px;
+        z-index: 1000;
+
+        .img1 {
+            -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 9px 8px 12px 12px rgba(255, 247, 79, 0);
+            box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 9px 8px 12px 12px rgba(255, 247, 79, 0);
+        }
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            position: relative;
+            z-index: 999;
+            box-shadow: 3px 3px 10px #778de2;
+            transform: perspective(200px) rotate3D(0, 1, 0, 5deg);
+            transition: .4s;
+
+            &:hover {
+                cursor: pointer;
+                transform: perspective(800px) rotate3D(1, 1, 1, 10deg);
+            }
+        }
+
+        >div {
+            >span {
+                display: flex;
+                width: 145px;
+                height: 145px;
+                position: relative;
+                z-index: 99;
+                position: fixed;
+                bottom: 24px;
+                right: 23px;
+                filter: blur(7px);
+
+                &:nth-of-type(1) {
+                    background-image: linear-gradient(to right bottom, #964fae, #8655ad, #785aab, #6a5da6, #5f5fa0, #5364a0, #49689f, #406b9d, #2f729f, #1f799f, #147f9c, #188598);
+                    border-radius: 7% 73% 26% 74% / 63% 92% 48% 57%;
+                    animation: imgButtomAnime 7s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+                    box-shadow: 0 0 30px 4px rgba(0, 34, 82, 0.753);
+                }
+
+                &:nth-of-type(2) {
+                    background-image: linear-gradient(to right bottom, #7a6796, #72608c, #6a5a81, #625377, #5a4d6d, #5c4d70, #5d4e74, #5f4e77, #6a5589, #765c9b, #8263ae, #8e6ac1);
+                    border-radius: 84% 16% 85% 15% / 39% 67% 33% 61%;
+
+                    animation: imgButtomAnime2 7s ease-in-out alternate infinite;
+                }
+
+                &:nth-of-type(3) {
+                    /* background-image: linear-gradient(to right bottom, #4b8de7, #4883cc, #4878b1, #496d97, #4a627d, #495b70, #485563, #474e56, #444a51, #41474d, #3e4348, #3b4044); */
+                    background-image: linear-gradient(to right bottom, #e198f9, #c991f2, #b18aeb, #9983e2, #807cd9, #6980d9, #5083d7, #3486d3, #0992d3, #009dd0, #18a7cb, #3cb0c4);
+                    border-radius: 88% 12% 100% 0% / 46% 56% 44% 54%;
+                    animation: imgButtomAnime3 7s linear alternate infinite;
+                }
+
+                &:nth-of-type(4) {
+                    background-image: linear-gradient(to right bottom, #f47bf9, #d98cff, #bf9aff, #aaa4fd, #9cabf4, #98acf1, #94adee, #91aeea, #8eacef, #8da9f3, #8ba6f7, #8ba3fb);
+                    border-radius: 52% 48% 52% 48% / 68% 67% 33% 32%;
+                    animation: imgButtomAnime4 7s linear alternate infinite;
+                }
+            }
+        }
+
+        .a1 {
+            border: 2px solid #ff8000;
+
+            &:hover {
+                background-color: rgb(248, 10, 10);
+                border: 2px solid yellow;
+            }
+        }
+
+        >a {
+            width: 40px;
+            height: 40px;
+            z-index: 998;
+            position: fixed;
+            bottom: 60px;
+            right: 42px;
+            transition: all 1s ease-in-out;
+            border: 2px solid #5D73CB;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.616);
+
+
+            >i {
+                color: black;
+                font-size: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: rgba(20, 167, 252, 0.822);
+                border: 2px solid #5b77e9;
+                filter: hue-rotate(40%) brightness(110%) contrast(120%);
+
+                >i {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &:hover>.imgFixed>a {
+
+        &:nth-of-type(1) {
+            bottom: 30px;
+            right: 180px;
+        }
+
+        &:nth-of-type(2) {
+            bottom: 80px;
+            right: 180px;
+        }
+
+        &:nth-of-type(3) {
+            bottom: 130px;
+            right: 180px;
+        }
+    }
+}
+
+
+@keyframes imgButtomAnime {
+    30% {
+        border-radius: 18% 82% 24% 76% / 66% 25% 75% 34%;
+    }
+
+    60% {
+        border-radius: 182% 18% 64% 36% / 55% 77% 23% 45%;
+    }
+
+    90% {
+        border-radius: 84% 16% 85% 15% / 39% 67% 33% 61%;
+    }
+
+    100% {
+        border-radius: 11% 89% 0% 100% / 67% 32% 68% 33%;
+    }
+}
+
+@keyframes imgButtomAnime2 {
+    30% {
+        border-radius: 47% 53% 67% 33% / 4% 90% 10% 96%;
+    }
+
+    60% {
+        border-radius: 75% 25% 86% 14% / 75% 6% 94% 25%;
+    }
+
+    90% {
+        border-radius: 45% 55% 41% 59% / 75% 0% 100% 25%;
+    }
+
+    100% {
+        border-radius: 56% 44% 100% 0% / 22% 60% 40% 78%;
+    }
+}
+
+@keyframes imgButtomAnime3 {
+    30% {
+        border-radius: 0% 100% 2% 98% / 0% 100% 0% 100%;
+    }
+
+    60% {
+        border-radius: 100% 0% 100% 0% / 59% 33% 67% 41%;
+    }
+
+    90% {
+        border-radius: 0% 100% 60% 40% / 0% 33% 67% 100%;
+    }
+
+    100% {
+        border-radius: 41% 59% 17% 83% / 43% 20% 80% 57%;
+    }
+}
+
+@keyframes imgButtomAnime4 {
+    30% {
+        border-radius: 0% 100% 2% 98% / 0% 100% 0% 100%;
+    }
+
+    60% {
+        border-radius: 100% 0% 100% 0% / 52% 47% 53% 48%;
+    }
+
+    90% {
+        border-radius: 0% 100% 0% 100% / 35% 62% 38% 65%;
+    }
+
+    100% {
+        border-radius: 48% 52% 49% 51% / 49% 54% 46% 51%;
+    }
+}
+
+/* end bottomFixedImage */
