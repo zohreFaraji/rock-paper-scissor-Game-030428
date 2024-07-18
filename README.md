@@ -10,7 +10,7 @@
 
 
 **You can see information about my project**
-- [Demo Project](https://zohrefaraji.github.io/rock-paper-scissor030428/)
+- [Demo Project](https://zohrefaraji.github.io/rock-paper-scissor-Game-030428/)
 
 - Developed by zohre faraji
 
